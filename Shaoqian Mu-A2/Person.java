@@ -5,13 +5,13 @@
 
 public abstract class Person {
     private String name;
-    private char gender;
+    private String gender;
     private int age;
 
     public Person() {
     }
 
-    public Person(String name, char gender, int age) {
+    public Person(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
         this.age = age;
@@ -25,11 +25,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public char getGender() {
+    public String getGender() {
         return this.gender;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

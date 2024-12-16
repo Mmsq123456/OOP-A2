@@ -11,7 +11,7 @@ public class Visitor extends Person {
     public Visitor() {
     }
 
-    public Visitor(String name, char gender, int age, String ticketType, String ticketDate,String duration,String Firstvisit) {
+    public Visitor(String name, String gender, int age, String ticketType, String ticketDate,String duration,String Firstvisit) {
         super(name, gender, age);
         this.ticketType = ticketType;
         this.ticketDate = ticketDate;

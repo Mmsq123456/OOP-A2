@@ -75,9 +75,9 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
     public void addVisitorToQueue(Visitor visitor) {
         if (visitor != null) {
             this.visitorQueue.offer(visitor);
-            System.out.println(visitor.getName() + "已成功添加参观队列！");
+            System.out.println(visitor.getName() + "The visitor queue was successfully added！");
         } else {
-            System.out.println(visitor.getName() + "未成功添加参观队列！");
+            System.out.println(visitor.getName() + "Failed to add visitor queue！");
         }
 
     }
@@ -85,18 +85,18 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
     public void removeVisitorFromQueue(Visitor visitor) {
         if (visitor != null) {
             this.visitorQueue.remove(visitor);
-            System.out.println(visitor.getName() + "已成功移除参观队列！");
+            System.out.println(visitor.getName() + "The visitor queue was successfully removed！");
         } else {
-            System.out.println(visitor.getName() + "已成功移除参观队列！");
+            System.out.println(visitor.getName() + "The visitor queue was successfully removed！");
         }
 
     }
 
     public void printQueue() {
         if (this.visitorQueue.isEmpty()) {
-            System.out.println("当前参观队列为空！");
+            System.out.println("The current visitor queue is empty！");
         } else {
-            System.out.println("参观队列内容如下:");
+            System.out.println("The viewing queue is as follows:");
 
             for(Visitor visitor : this.visitorQueue) {
                 System.out.println(visitor.toString());
@@ -107,7 +107,7 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
 
     public void addVisitorToHistory(Visitor visitor) {
         this.visitorList.add(visitor);
-        System.out.println(visitor.getName() + "游客已从参观队列中至游客参观历史中！");
+        System.out.println(visitor.getName() + "Visitors have been moved from the visitor queue to the visitor visit history！");
         if (this.getVisitorQueue().contains(visitor)) {
             this.removeVisitorFromQueue(visitor);
         }
@@ -125,10 +125,10 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
 
     public void printRideHistory() {
         if (this.numberOfVisitors() == 0) {
-            System.out.println("游客参观历史记录数据为空！");
+            System.out.println("Visitor visit history data is empty！");
         } else {
             Iterator iterator = this.visitorList.iterator();
-            System.out.println("游客参观历史记录数据如下：");
+            System.out.println("Visitor visit history data are as follows：");
 
             while(iterator.hasNext()) {
                 Visitor visitor = (Visitor)iterator.next();
@@ -142,9 +142,9 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
 
     public void runOneCycle() {
         if (this.operator == null) {
-            System.out.println("无操作员,游乐设施无法运行！");
+            System.out.println("The ride cannot operate without an operator！");
         } else if (this.visitorQueue.isEmpty()) {
-            System.out.println("无游客队列,游乐设施无法运行！");
+            System.out.println("The ride cannot operate without a queue of visitors！");
         } else {
             int riders = this.maxRider > this.visitorQueue.size() ? this.visitorQueue.size() : this.maxRider;
 
@@ -154,7 +154,7 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
             }
 
             ++this.numOfCycles;
-            System.out.println("游乐设施运行" + this.numOfCycles + "次，接待了" + riders + "个游客。");
+            System.out.println("Amusement facility operation" + this.numOfCycles + "Times, welcome" + riders + "Several tourists。");
         }
     }
 
@@ -170,7 +170,7 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
                 writer.write("\n");
             }
 
-            System.out.println("数据已成功导出！导出文件名:" + filename);
+            System.out.println("Data has been successfully exported! Export file name:" + filename);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -182,13 +182,13 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
             while(true) {
                 String line;
                 if ((line = reader.readLine()) == null) {
-                    System.out.println("数据已成功导入！导入文件名:" + filename);
+                    System.out.println("Data has been successfully imported! Import file name:" + filename);
                     break;
                 }
 
                 String[] str = line.split("\t");
                 String name = str[0].substring(8);
-                char gender = str[1].charAt(0);
+                String gender = str[1]; // 直接获取整个字段作为字符串
                 int age = Integer.parseInt(str[2]);
                 String ticketType = str[3];
                 String ticketDate = str[4];
