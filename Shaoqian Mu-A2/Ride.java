@@ -192,7 +192,9 @@ public class Ride implements RiderInterface, Comparator<Visitor> {
                 int age = Integer.parseInt(str[2]);
                 String ticketType = str[3];
                 String ticketDate = str[4];
-                Visitor visitor = new Visitor(name, gender, age, ticketType, ticketDate);
+                String duration = str[5];
+                String Firstvisit = str[6];
+                Visitor visitor = new Visitor(name, gender, age, ticketType, ticketDate,duration,Firstvisit);
                 if (visitor != null) {
                     this.addVisitorToQueue(visitor);
                     this.addVisitorToHistory(visitor);

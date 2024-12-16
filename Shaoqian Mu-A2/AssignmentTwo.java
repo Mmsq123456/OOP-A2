@@ -22,11 +22,11 @@ public class AssignmentTwo {
     public void partThree() {
         Employee employee = new Employee("Tom", '男', 32, "Roller_Coaster_Rider", 8000);
         Ride ride = new Ride("Roller_Coaster", 1, employee);
-        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10");
-        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11");
-        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12");
-        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13");
-        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14");
+        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10","10","True");
+        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11","8","False");
+        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12","5","True");
+        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13","15","True");
+        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14","17","False");
         ride.addVisitorToQueue(v1);
         ride.addVisitorToQueue(v2);
         ride.addVisitorToQueue(v3);
@@ -40,11 +40,11 @@ public class AssignmentTwo {
     public void partFourA() {
         Employee employee = new Employee("Tom", '男', 32, "Roller_Coaster_Rider", 8000);
         Ride ride = new Ride("Roller_Coaster", 1, employee);
-        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10");
-        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11");
-        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12");
-        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13");
-        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14");
+        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10","20","True");
+        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11","21","False");
+        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12","24","True");
+        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13","26","True");
+        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14","27","False");
         ride.addVisitorToQueue(v1);
         ride.addVisitorToQueue(v2);
         ride.addVisitorToQueue(v3);
@@ -70,11 +70,11 @@ public class AssignmentTwo {
     public void partFourB() {
         Employee employee = new Employee("Tom", '男', 32, "Roller_Coaster_Rider", 8000);
         Ride ride = new Ride("Roller_Coaster", 1, employee);
-        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10");
-        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11");
-        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12");
-        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13");
-        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14");
+        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10","31","True");
+        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11","35","True");
+        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12","19","False");
+        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13","12","False");
+        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14","28","True");
         ride.addVisitorToHistory(v1);
         ride.addVisitorToHistory(v2);
         ride.addVisitorToHistory(v3);
@@ -90,16 +90,16 @@ public class AssignmentTwo {
     public void partFive() {
         Employee employee = new Employee("Tom", '男', 32, "Roller_Coaster_Rider", 8000);
         Ride ride = new Ride("Roller_Coaster", 1, employee);
-        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10");
-        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11");
-        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12");
-        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13");
-        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14");
-        Visitor v6 = new Visitor("Mik", '男', 26, "adult_ticket", "2024-12-10");
-        Visitor v7 = new Visitor("Liy", '女', 32, "adult_ticket", "2024-12-9");
-        Visitor v8 = new Visitor("Jon", '男', 21, "student_ticket", "2024-12-2");
-        Visitor v9 = new Visitor("Sra", '女', 4, "child_ticket", "2024-12-18");
-        Visitor v10 = new Visitor("Dav", '男', 65, "senior_ticket", "2024-12-9");
+        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10","27","False");
+        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11","29","True");
+        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12","57","False");
+        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13","59","True");
+        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14","26","False");
+        Visitor v6 = new Visitor("Mik", '男', 26, "adult_ticket", "2024-12-10","49","True");
+        Visitor v7 = new Visitor("Liy", '女', 32, "adult_ticket", "2024-12-9","59","False");
+        Visitor v8 = new Visitor("Jon", '男', 21, "student_ticket", "2024-12-2","52","False");
+        Visitor v9 = new Visitor("Sra", '女', 4, "child_ticket", "2024-12-18","41","False");
+        Visitor v10 = new Visitor("Dav", '男', 65, "senior_ticket", "2024-12-9","53","True");
         ride.addVisitorToQueue(v1);
         ride.addVisitorToQueue(v2);
         ride.addVisitorToQueue(v3);
@@ -121,11 +121,11 @@ public class AssignmentTwo {
     public void partSix() {
         Employee employee = new Employee("Tom", '男', 32, "Roller_Coaster_Rider", 8000);
         Ride ride = new Ride("Roller_Coaster", 1, employee);
-        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10");
-        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11");
-        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12");
-        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13");
-        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14");
+        Visitor v1 = new Visitor("Mike", '男', 25, "adult_ticket", "2024-12-10","18","True");
+        Visitor v2 = new Visitor("Lily", '女', 30, "adult_ticket", "2024-12-11","17","True");
+        Visitor v3 = new Visitor("John", '男', 18, "student_ticket", "2024-12-12","40","False");
+        Visitor v4 = new Visitor("Sarah", '女', 6, "child_ticket", "2024-12-13","57","False");
+        Visitor v5 = new Visitor("David", '男', 60, "senior_ticket", "2024-12-14","42","True");
         ride.addVisitorToQueue(v1);
         ride.addVisitorToQueue(v2);
         ride.addVisitorToQueue(v3);

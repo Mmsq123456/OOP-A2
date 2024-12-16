@@ -6,14 +6,17 @@
 public class Visitor extends Person {
     private String ticketType;
     private String ticketDate;
-
+    private String duration;
+    private String Firstvisit;
     public Visitor() {
     }
 
-    public Visitor(String name, char gender, int age, String ticketType, String ticketDate) {
+    public Visitor(String name, char gender, int age, String ticketType, String ticketDate,String duration,String Firstvisit) {
         super(name, gender, age);
         this.ticketType = ticketType;
         this.ticketDate = ticketDate;
+        this.duration = duration;
+        this.Firstvisit = Firstvisit;
     }
 
     public String getTicketType() {
@@ -32,8 +35,24 @@ public class Visitor extends Person {
         this.ticketDate = ticketDate;
     }
 
+    public String getduration() {
+        return this.duration;
+    }
+
+    public void setduration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getFirstvisit() {
+        return this.Firstvisit;
+    }
+
+    public void setFirstvisit(String duration) {
+        this.Firstvisit = Firstvisit;
+    }
+
     public String toString() {
         String var10000 = super.toString();
-        return "Visitor:" + var10000 + "\t" + this.ticketType + "\t" + this.ticketDate;
+        return "Visitor:" + var10000 + "\t" + this.ticketType + "\t" + this.ticketDate+ "\t" + this.duration+ "\t" + this.Firstvisit;
     }
 }

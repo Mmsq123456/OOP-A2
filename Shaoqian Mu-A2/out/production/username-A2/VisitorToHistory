@@ -1,5 +1,5 @@
-Visitor:Mike	男	25	adult_ticket	2024-12-10
-Visitor:Lily	女	30	adult_ticket	2024-12-11
-Visitor:John	男	18	student_ticket	2024-12-12
-Visitor:Sarah	女	6	child_ticket	2024-12-13
-Visitor:David	男	60	senior_ticket	2024-12-14
+Visitor:Mike	男	25	adult_ticket	2024-12-10	18	True
+Visitor:Lily	女	30	adult_ticket	2024-12-11	17	True
+Visitor:John	男	18	student_ticket	2024-12-12	40	False
+Visitor:Sarah	女	6	child_ticket	2024-12-13	57	False
+Visitor:David	男	60	senior_ticket	2024-12-14	42	True
